@@ -1,0 +1,64 @@
+# Microsoft Developer Studio Generated Dependency File, included by Primes.mak
+
+.\EliminationTab.cpp : \
+	".\EliminationTab.h"\
+	".\Primes.h"\
+	
+
+.\FirstTab.cpp : \
+	".\FirstTab.h"\
+	".\Primes.h"\
+	".\ProgressDlg.h"\
+	
+
+.\IsPrimeTab.cpp : \
+	".\IsPrimeTab.h"\
+	".\Primes.h"\
+	
+
+.\MillionTab.cpp : \
+	".\MillionTab.h"\
+	".\Primes.h"\
+	
+
+.\Primes.cpp : \
+	".\Primes.h"\
+	".\PrimesDlg.h"\
+	".\TabDialogCtrl.h"\
+	
+
+.\Primes.rc : \
+	".\res\Prime.ico"\
+	".\res\Primes.rc2"\
+	
+
+.\PrimesDlg.cpp : \
+	".\Primes.h"\
+	".\PrimesDlg.h"\
+	".\TabDialogCtrl.h"\
+	
+
+.\PrimeTab.cpp : \
+	".\Primes.h"\
+	".\PrimeTab.h"\
+	
+
+.\ProgressDlg.cpp : \
+	".\Primes.h"\
+	".\ProgressDlg.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\..\..\..\..\programming\microsoft visual studio\vc98\include\basetsd.h"\
+	".\StdAfx.h"\
+	
+
+.\TabDialogCtrl.cpp : \
+	".\EliminationTab.h"\
+	".\FirstTab.h"\
+	".\IsPrimeTab.h"\
+	".\MillionTab.h"\
+	".\Primes.h"\
+	".\PrimeTab.h"\
+	".\TabDialogCtrl.h"\
+	

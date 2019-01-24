@@ -1,0 +1,2 @@
+Total Time Taken: 2.164 seconds
+Total Number of Primes: 78498

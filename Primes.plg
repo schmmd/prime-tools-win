@@ -1,0 +1,131 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Primes - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/Primes.res" /d "NDEBUG" /d "_AFXDLL" "C:\Michael\Programming\C++\MFC\Primes\Primes.rc"" 
+Creating temporary file "C:\DOCUME~1\MICHAE~1\LOCALS~1\Temp\RSP8C.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/Primes.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Michael\Programming\C++\MFC\Primes\EliminationTab.cpp"
+"C:\Michael\Programming\C++\MFC\Primes\FirstTab.cpp"
+"C:\Michael\Programming\C++\MFC\Primes\IsPrimeTab.cpp"
+"C:\Michael\Programming\C++\MFC\Primes\MillionTab.cpp"
+"C:\Michael\Programming\C++\MFC\Primes\Primes.cpp"
+"C:\Michael\Programming\C++\MFC\Primes\PrimesDlg.cpp"
+"C:\Michael\Programming\C++\MFC\Primes\PrimeTab.cpp"
+"C:\Michael\Programming\C++\MFC\Primes\ProgressDlg.cpp"
+"C:\Michael\Programming\C++\MFC\Primes\TabDialogCtrl.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\MICHAE~1\LOCALS~1\Temp\RSP8C.tmp" 
+Creating temporary file "C:\DOCUME~1\MICHAE~1\LOCALS~1\Temp\RSP8D.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/Primes.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Michael\Programming\C++\MFC\Primes\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\MICHAE~1\LOCALS~1\Temp\RSP8D.tmp" 
+Creating temporary file "C:\DOCUME~1\MICHAE~1\LOCALS~1\Temp\RSP8E.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/primes.pdb" /machine:I386 /out:"primes.exe" 
+".\Release\EliminationTab.obj"
+".\Release\FirstTab.obj"
+".\Release\IsPrimeTab.obj"
+".\Release\MillionTab.obj"
+".\Release\Primes.obj"
+".\Release\PrimesDlg.obj"
+".\Release\PrimeTab.obj"
+".\Release\ProgressDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\TabDialogCtrl.obj"
+".\Release\Primes.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\MICHAE~1\LOCALS~1\Temp\RSP8E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+EliminationTab.cpp
+FirstTab.cpp
+IsPrimeTab.cpp
+MillionTab.cpp
+Primes.cpp
+PrimesDlg.cpp
+PrimeTab.cpp
+ProgressDlg.cpp
+TabDialogCtrl.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Primes.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Primes - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/Primes.res" /d "_DEBUG" /d "_AFXDLL" "C:\Michael\Programming\C++\MFC\Primes\Primes.rc"" 
+Creating temporary file "C:\DOCUME~1\MICHAE~1\LOCALS~1\Temp\RSP90.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Primes.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Michael\Programming\C++\MFC\Primes\EliminationTab.cpp"
+"C:\Michael\Programming\C++\MFC\Primes\FirstTab.cpp"
+"C:\Michael\Programming\C++\MFC\Primes\IsPrimeTab.cpp"
+"C:\Michael\Programming\C++\MFC\Primes\MillionTab.cpp"
+"C:\Michael\Programming\C++\MFC\Primes\Primes.cpp"
+"C:\Michael\Programming\C++\MFC\Primes\PrimesDlg.cpp"
+"C:\Michael\Programming\C++\MFC\Primes\PrimeTab.cpp"
+"C:\Michael\Programming\C++\MFC\Primes\ProgressDlg.cpp"
+"C:\Michael\Programming\C++\MFC\Primes\TabDialogCtrl.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\MICHAE~1\LOCALS~1\Temp\RSP90.tmp" 
+Creating temporary file "C:\DOCUME~1\MICHAE~1\LOCALS~1\Temp\RSP91.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Primes.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Michael\Programming\C++\MFC\Primes\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\MICHAE~1\LOCALS~1\Temp\RSP91.tmp" 
+Creating temporary file "C:\DOCUME~1\MICHAE~1\LOCALS~1\Temp\RSP92.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/primes.pdb" /debug /machine:I386 /out:"Debug/primes.exe" /pdbtype:sept 
+".\Debug\EliminationTab.obj"
+".\Debug\FirstTab.obj"
+".\Debug\IsPrimeTab.obj"
+".\Debug\MillionTab.obj"
+".\Debug\Primes.obj"
+".\Debug\PrimesDlg.obj"
+".\Debug\PrimeTab.obj"
+".\Debug\ProgressDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TabDialogCtrl.obj"
+".\Debug\Primes.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\MICHAE~1\LOCALS~1\Temp\RSP92.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+EliminationTab.cpp
+FirstTab.cpp
+IsPrimeTab.cpp
+MillionTab.cpp
+Primes.cpp
+PrimesDlg.cpp
+PrimeTab.cpp
+ProgressDlg.cpp
+TabDialogCtrl.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Primes.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

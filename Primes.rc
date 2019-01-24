@@ -1,0 +1,336 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Primes.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Prime.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 44
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Primes"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,11,20,20
+    LTEXT           "Primes Version 2.0.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright© 2001 by Michael Schmitz",IDC_STATIC,40,25,
+                    137,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PRIMES_DIALOG DIALOGEX 0, 0, 256, 103
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Primes"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab2",IDC_TAB,"SysTabControl32",0x0,7,7,242,89
+END
+
+IDD_PRIME_TAB DIALOG DISCARDABLE  0, 0, 233, 78
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Solve for all primes less than",IDC_STATIC,31,9,90,8
+    EDITTEXT        IDE_MAXPRIME,123,7,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "&Solve",IDC_SOLVE,95,39,42,15
+    CTEXT           """Primes < X"" solves for every prime less than X using a fast and memory efficient algorithm.",
+                    IDC_STATIC,7,54,219,17
+    LTEXT           "Output to file:",IDS_OUTPUT,7,23,43,8
+    EDITTEXT        IDE_OUTPUT,53,21,122,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BROWSE,178,21,48,12
+END
+
+IDD_MILLION_TAB DIALOG DISCARDABLE  0, 0, 233, 78
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Solve for all primes less than",IDS_STATIC,32,9,90,8
+    EDITTEXT        IDE_MAXPRIME,124,7,51,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "million",IDS_MILLION,179,9,21,8
+    DEFPUSHBUTTON   "&Solve",IDC_SOLVE,95,39,42,15
+    CTEXT           """Primes < X Million"" solves for every primes less than X Million and outputs them into a file for each million.",
+                    IDC_STATIC,7,54,219,17
+    EDITTEXT        IDE_CURRENT,7,24,219,10,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+END
+
+IDD_FIRST_TAB DIALOG DISCARDABLE  0, 0, 233, 78
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "primes",IDS_PRIMES,175,9,21,8
+    LTEXT           "Solve for the first",IDC_STATIC,37,9,54,8
+    EDITTEXT        IDE_NUMPRIME,93,7,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "&Solve",IDC_SOLVE,95,39,42,15
+    CTEXT           """First X Primes"" solves for the first X primes using a fast and memory efficient algorithm.",
+                    IDC_STATIC,7,54,219,17
+    LTEXT           "Output to file:",IDS_OUTPUT,7,23,43,8
+    EDITTEXT        IDE_OUTPUT,53,21,122,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BROWSE,178,21,48,12
+END
+
+IDD_ISPRIME_TAB DIALOG DISCARDABLE  0, 0, 233, 78
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "prime?",IDS_PRIMES,157,8,22,8
+    LTEXT           "Is",IDC_STATIC,53,9,8,8
+    EDITTEXT        IDE_PRIME,62,7,92,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "&Solve",IDC_SOLVE,95,39,42,15
+    CTEXT           """Is X Prime"" simply checks if a number is prime.",
+                    IDC_STATIC,7,54,219,17
+    EDITTEXT        IDE_RESULT,7,24,219,10,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+END
+
+IDD_ELIMINATION_TAB DIALOG DISCARDABLE  0, 0, 233, 78
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Solve for all primes less than",IDC_STATIC,31,9,90,8
+    EDITTEXT        IDE_MAXPRIME,123,7,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "&Solve",IDC_SOLVE,95,39,42,15
+    CTEXT           "Elimination works works like ""Primes < X"", but it uses a different technique that works faster and uses significantly more RAM.",
+                    IDC_STATIC,7,54,219,17
+    LTEXT           "Output to file:",IDS_OUTPUT,7,23,43,8
+    EDITTEXT        IDE_OUTPUT,53,21,122,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BROWSE,178,21,48,12
+END
+
+IDD_PROGRESS DIALOGEX 0, 0, 277, 39
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Calculating Primes"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Calculating primes...",IDC_STATIC,7,7,68,11
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,
+                    21,263,11
+    LTEXT           "Static",IDE_REPORT,77,7,193,9,0,WS_EX_RIGHT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Primes MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Primes\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Primes.EXE\0"
+            VALUE "ProductName", "Primes Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 37
+    END
+
+    IDD_PRIMES_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_PRIME_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_MILLION_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_FIRST_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_ISPRIME_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_ELIMINATION_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 32
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Primes..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Primes.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
